@@ -20,19 +20,48 @@
     <title>Manage</title>
   </head>
   <body>
-    <header class="primary-header">
+    <header class="primary-header" data-="">
       <div class="container">
-        <a href="#"><img src="/images/logo.svg" alt="Manage" /></a>
-        <nav class="primary-navigation" aria-label="Primary">
-          <ul role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="/images/logo.svg" alt="Manage" /></a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="/images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav
+            class="primary-navigation"
+            id="primary-navigation"
+            aria-label="Primary"
+          >
+            <ul role="list" aria-label="Primary" class="nav-list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button
+            class="button | display-small-none display-medium-inline-flex"
+          >
+            Get Started
+          </button>
+        </div>
       </div>
     </header>
     <main>
