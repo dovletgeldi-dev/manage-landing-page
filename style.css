@@ -182,7 +182,7 @@ p[data-width="wide"] {
 /* Navigation */
 
 .primary-header {
-  padding-top: 3.58rem;
+  padding-top: var(--size-600);
   display: flex;
 }
 
