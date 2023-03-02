@@ -273,6 +273,7 @@ p[data-width="wide"] {
 
 .primary-footer-wrapper {
   display: grid;
+
   gap: var(--size-700);
   grid-template-areas: "form" "nav" "logo-social";
 }
@@ -311,6 +312,8 @@ p[data-width="wide"] {
 @media (min-width: 50em) {
   .primary-footer-wrapper {
     grid-template-areas: "logo-social nav form";
+    align-items: start;
+    justify-content: space-between;
   }
   .primary-footer-logo-social {
     align-items: start;
@@ -329,7 +332,7 @@ p[data-width="wide"] {
 
 .footer-nav {
   columns: 2;
-  gap: max(15vm, 2rem);
+  gap: 3rem;
 }
 
 .footer-nav a {
@@ -366,6 +369,11 @@ p[data-width="wide"] {
 
   .social-icon {
     width: var(--size-500);
+  }
+
+  .footer-nav {
+    columns: 2;
+    gap: 5rem;
   }
 }
 
