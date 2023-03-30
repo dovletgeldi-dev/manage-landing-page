@@ -256,7 +256,7 @@ p[data-width="wide"] {
 
   .mobile-nav-toggle {
     display: block;
-    position: fixed;
+    position: absolute;
     top: var(--size-600);
     right: var(--size-400);
 
